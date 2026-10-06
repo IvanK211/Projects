@@ -1,0 +1,12 @@
+[Unit]
+Description=Reference service watchdog - configure locally before installing
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Placeholder paths must be replaced in a private copy.
+ExecStart=/REPLACE_LOCALLY/watchdog.sh REPLACE_SERVICE
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict

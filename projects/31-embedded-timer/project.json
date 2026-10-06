@@ -1,0 +1,18 @@
+{
+  "id": "31-embedded-timer",
+  "title": "Nonblocking two-team event timer",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Arduino reference sketch; hardware build unverified",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/31-embedded-timer/TeamTimer/TeamTimer.ino"
+  ],
+  "requiredValidation": [
+    "The timer starts paused and a pause press stops accumulation.",
+    "Holding a button does not generate repeated state-change events.",
+    "Timing continues without blocking while input debouncing runs."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "36-developer-productivity",
+  "title": "Portable project notes and workflow scaffolding",
+  "category": "Developer tooling",
+  "archiveStatus": "Markdown templates + repository-index utility",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python tools/build_index.py",
+  "sourceFiles": [
+    "projects/36-developer-productivity/project-note-template.md",
+    "tools/build_index.py"
+  ],
+  "requiredValidation": [
+    "Notes remain readable without a hosted account.",
+    "No workspace identifiers or real task records are required.",
+    "The generated index includes source paths, not local private data."
+  ]
+}

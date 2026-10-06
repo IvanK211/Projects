@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "person-a",
+      "division": "Group Alpha",
+      "active": true
+    },
+    {
+      "id": "person-b",
+      "division": "Group Alpha",
+      "active": true
+    },
+    {
+      "id": "person-c",
+      "division": "Group Beta",
+      "active": true
+    }
+  ],
+  "requiredTrainingIds": [
+    "module-a",
+    "module-b"
+  ],
+  "enrollments": [
+    {
+      "userId": "person-a",
+      "trainingId": "module-a",
+      "status": "completed"
+    },
+    {
+      "userId": "person-a",
+      "trainingId": "module-b",
+      "status": "in progress"
+    },
+    {
+      "userId": "person-b",
+      "trainingId": "module-a",
+      "status": "passed"
+    }
+  ]
+}

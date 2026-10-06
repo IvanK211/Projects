@@ -1,0 +1,7 @@
+# Fictional identities; create matching local broker accounts independently.
+user lab-controller
+ topic read lab/reference/command/#
+ topic write lab/reference/state/#
+
+user lab-observer
+ topic read lab/reference/state/#

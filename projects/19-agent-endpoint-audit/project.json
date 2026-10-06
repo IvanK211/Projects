@@ -1,0 +1,21 @@
+{
+  "id": "19-agent-endpoint-audit",
+  "title": "Region-aware agent and API endpoint review",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Offline transformation tool + connectivity runbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python projects/19-agent-endpoint-audit/prepare_endpoint_copy.py examples/endpoint-input.txt examples/endpoint-map.json local-output/endpoint-copy.txt",
+  "sourceFiles": [
+    "labkit/endpoints.py",
+    "projects/19-agent-endpoint-audit/prepare_endpoint_copy.py",
+    "examples/endpoint-map.json",
+    "examples/endpoint-input.txt"
+  ],
+  "requiredValidation": [
+    "Unrelated URLs are unchanged.",
+    "The original file is never overwritten.",
+    "Only hostnames are counted in diagnostics; URL queries and credentials are not printed."
+  ]
+}

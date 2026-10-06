@@ -1,0 +1,18 @@
+{
+  "id": "44-power-budget",
+  "title": "Low-voltage runtime and energy-budget calculator",
+  "category": "Engineering methods",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit energy --voltage 5 --amp-hours 2 --watts 1.5 --usable-fraction 0.8 --efficiency 0.85 local-output/energy.json",
+  "sourceFiles": [
+    "labkit/engineering.py"
+  ],
+  "requiredValidation": [
+    "Zero load power and non-finite inputs fail validation.",
+    "Fractions are restricted to physically meaningful ranges.",
+    "Estimated hours are not presented as a guaranteed runtime."
+  ]
+}

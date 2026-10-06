@@ -1,0 +1,18 @@
+{
+  "id": "03-directory-memberships",
+  "title": "Directory group-membership audit",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "Unverified live collector + analysis guide",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/03-directory-memberships/Export-GroupMemberships.ps1"
+  ],
+  "requiredValidation": [
+    "The input is a bounded list rather than a tenant-wide implicit sweep.",
+    "Direct and transitive output contain an explicit relation label.",
+    "A prefix filter does not change the underlying authorization model."
+  ]
+}

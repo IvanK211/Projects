@@ -1,0 +1,16 @@
+{
+  "id": "24-private-remote-access",
+  "title": "Private remote-administration design",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Design and recovery runbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "A compromised peer does not automatically receive broad network reachability by design.",
+    "A recovery method exists without depending on the same failed access path.",
+    "Private keys and network topology never enter the public repository."
+  ]
+}

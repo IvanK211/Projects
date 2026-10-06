@@ -1,0 +1,21 @@
+{
+  "id": "04-defender-hunting",
+  "title": "Endpoint identity and network hunting queries",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "KQL templates; not executed against a tenant",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/04-defender-hunting/latest-device-identity.kql",
+    "projects/04-defender-hunting/ip-to-device.kql",
+    "projects/04-defender-hunting/exact-hostnames.kql",
+    "projects/04-defender-hunting/device-network-history.kql"
+  ],
+  "requiredValidation": [
+    "An IP lookup returns potentially multiple devices and time ranges.",
+    "Hostname selection uses equality rather than a broad contains match.",
+    "No query isolates a device, changes policy, or executes a response action."
+  ]
+}

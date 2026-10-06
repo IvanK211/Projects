@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "fields": {
+    "time": "ISO-8601 timestamp with UTC offset",
+    "sensor": "local sensor alias",
+    "unit": "explicit measurement unit",
+    "value": "finite number",
+    "sampleContext": "separate reference / system sample / calibration buffer",
+    "temperature": "record independently",
+    "calibrationReference": "local record identifier"
+  },
+  "notes": "No dosing instructions or historical measurements are included."
+}

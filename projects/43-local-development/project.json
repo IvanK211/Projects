@@ -1,0 +1,16 @@
+{
+  "id": "43-local-development",
+  "title": "Safe local development and demonstration workflow",
+  "category": "Developer tooling",
+  "archiveStatus": "Operational checklist",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "A troubleshooting procedure starts with observation rather than disabling protections.",
+    "Demo servers are not accidentally reachable from other machines.",
+    "Temporary convenience changes have an explicit restoration step."
+  ]
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Observe a reference service periodically
+[Timer]
+OnBootSec=4min
+OnUnitActiveSec=6min
+RandomizedDelaySec=40s
+Unit=reference-watchdog.service
+[Install]
+WantedBy=timers.target

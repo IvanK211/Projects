@@ -1,0 +1,18 @@
+{
+  "id": "15-deception-lab",
+  "title": "Defensive deception and canary lab",
+  "category": "Detection engineering",
+  "archiveStatus": "Local demonstration + design playbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python projects/15-deception-lab/canary.py --port 8098",
+  "sourceFiles": [
+    "projects/15-deception-lab/canary.py"
+  ],
+  "requiredValidation": [
+    "One authorized interaction produces one minimal event.",
+    "No command execution or credential submission path exists.",
+    "Networked deployment remains an explicit future design review."
+  ]
+}

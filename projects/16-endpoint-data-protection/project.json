@@ -1,0 +1,16 @@
+{
+  "id": "16-endpoint-data-protection",
+  "title": "Endpoint DLP, device control and cloud-app governance",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "Design and validation playbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "Every proposed block has a corresponding audit test and recovery path.",
+    "Local processing is not assumed to generate network-observable traffic.",
+    "Exception duration and ownership are explicit."
+  ]
+}

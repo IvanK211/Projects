@@ -1,0 +1,20 @@
+{
+  "id": "05-pam-port-management",
+  "title": "PAM account-property change planning",
+  "category": "Privileged access management",
+  "archiveStatus": "Offline planner + unverified, guarded live executor",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit pam-plan examples/pam-accounts.json local-output/pam-plan.json --suffix example.invalid --port 9443",
+  "sourceFiles": [
+    "labkit/pam.py",
+    "projects/05-pam-port-management/Apply-PamPortPlan.ps1",
+    "examples/pam-accounts.json"
+  ],
+  "requiredValidation": [
+    "One patch remains a JSON array rather than collapsing into an object.",
+    "Other properties survive the operation and duplicate port casing is rejected.",
+    "A failed update stops the batch; earlier successful operations are not described as rolled back."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "20-service-watchdog",
+  "title": "Bounded Linux service watchdog",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Bash syntax-checked reference; service recovery unverified",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/20-service-watchdog/watchdog.sh",
+    "projects/20-service-watchdog/reference-watchdog.service.example",
+    "projects/20-service-watchdog/reference-watchdog.timer.example"
+  ],
+  "requiredValidation": [
+    "No restart occurs without --apply.",
+    "Concurrent runs do not perform duplicate recovery actions.",
+    "Persistent failure produces a failure exit rather than a false-success message."
+  ]
+}

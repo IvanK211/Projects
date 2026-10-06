@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Lab cases reviewed",
+    "kind": "sum",
+    "values": [
+      7,
+      11,
+      9
+    ],
+    "unit": "cases"
+  },
+  {
+    "name": "Lab sensor coverage",
+    "kind": "mean",
+    "values": [
+      0.75,
+      0.8,
+      0.85
+    ],
+    "unit": "fraction"
+  },
+  {
+    "name": "Lab active assets",
+    "kind": "last",
+    "values": [
+      12,
+      14,
+      13
+    ],
+    "unit": "assets"
+  },
+  {
+    "name": "Unavailable lab metric",
+    "kind": "sum",
+    "values": [],
+    "unit": "count"
+  }
+]

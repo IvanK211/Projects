@@ -1,0 +1,20 @@
+# Independent reference blueprint, not part of a real deployment inventory.
+services:
+  mqtt:
+    image: ${MQTT_IMAGE:?Set an approved image reference, preferably by digest}
+    user: "${MQTT_UID:?Choose the reviewed broker UID}:${MQTT_GID:?Choose the reviewed broker GID}"
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${MQTT_HOST_PORT:?Choose an unused local port}:1883"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ${MQTT_PASSWORD_FILE:?Choose a local password-file path}:/mosquitto/config/passwords:ro
+      - ${MQTT_ACL_FILE:?Choose a local ACL-file path}:/mosquitto/config/acl:ro
+      - mqtt-data:/mosquitto/data
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "2"}
+volumes:
+  mqtt-data: {}

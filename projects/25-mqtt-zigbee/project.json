@@ -1,0 +1,19 @@
+{
+  "id": "25-mqtt-zigbee",
+  "title": "MQTT authorization and Zigbee integration lab",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Configuration example + design guide",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/25-mqtt-zigbee/acl.example",
+    "projects/22-container-blueprints/mosquitto.conf"
+  ],
+  "requiredValidation": [
+    "Anonymous clients cannot publish to the reference broker.",
+    "The observer cannot send control messages.",
+    "A stale retained message cannot silently be treated as a fresh safety decision."
+  ]
+}

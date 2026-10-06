@@ -1,0 +1,16 @@
+{
+  "id": "17-conditional-access",
+  "title": "Conditional-access and MFA rollout kit",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "Design and communication templates",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "Pilot success includes recovery and exception paths, not just a happy-path login.",
+    "Policy scope is documented before enforcement.",
+    "User communications do not leak internal URLs or device inventories."
+  ]
+}

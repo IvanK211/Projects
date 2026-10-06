@@ -1,0 +1,16 @@
+{
+  "id": "34-print-quality",
+  "title": "FDM print quality, maintenance and material selection",
+  "category": "Mechanical design and fabrication",
+  "archiveStatus": "Design and maintenance worksheets",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "A test isolates one variable and records the outcome.",
+    "A fit coupon is used before a functional mating part.",
+    "No material suitability claim is based solely on a filament marketing name."
+  ]
+}

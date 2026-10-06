@@ -1,0 +1,16 @@
+{
+  "id": "18-compliance-evidence",
+  "title": "Security-control evidence and operational assurance",
+  "category": "Governance and documentation",
+  "archiveStatus": "Reusable templates; not a compliance opinion",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "Each statement has an evidence owner and validation method.",
+    "No real audit status or certification claim is inferred from this repository.",
+    "Evidence retention and access are explicit decisions."
+  ]
+}

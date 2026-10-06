@@ -1,0 +1,16 @@
+{
+  "id": "42-smart-mirror-concept",
+  "title": "Local information-display and smart-mirror concept",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Concept architecture only",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "A network outage does not expose an error page containing credentials.",
+    "Cached personal content can be cleared and access revoked.",
+    "The concept does not imply a completed physical build."
+  ]
+}

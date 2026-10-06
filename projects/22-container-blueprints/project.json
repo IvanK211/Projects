@@ -1,0 +1,21 @@
+{
+  "id": "22-container-blueprints",
+  "title": "Independent container-service blueprints",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Deployment templates; not Docker-runtime validated",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/22-container-blueprints/compose.mqtt.yaml",
+    "projects/22-container-blueprints/compose.home-automation.yaml",
+    "projects/22-container-blueprints/compose.firmware-dashboard.yaml",
+    "projects/22-container-blueprints/.env.example"
+  ],
+  "requiredValidation": [
+    "Missing required variables stop interpolation rather than inventing defaults.",
+    "No public interface is exposed by a copied template.",
+    "An image update has a recorded rollback and data-compatibility check."
+  ]
+}

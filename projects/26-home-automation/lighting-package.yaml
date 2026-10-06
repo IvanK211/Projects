@@ -1,0 +1,37 @@
+# Home Assistant package reference; entity names are fictional.
+input_boolean:
+  lab_night_mode:
+    name: Lab night mode
+    initial: false
+
+automation:
+  - id: lab_motion_reference
+    alias: Lab motion lighting reference
+    mode: restart
+    triggers:
+      - trigger: state
+        entity_id: binary_sensor.lab_motion
+        to: "on"
+    conditions: []
+    actions:
+      - action: light.turn_on
+        target:
+          entity_id: light.lab_light
+        data:
+          brightness_pct: "{{ 15 if is_state('input_boolean.lab_night_mode', 'on') else 70 }}"
+  - id: lab_no_motion_reference
+    alias: Lab light off after inactivity
+    mode: single
+    triggers:
+      - trigger: state
+        entity_id: binary_sensor.lab_motion
+        to: "off"
+        for: "00:03:00"
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.lab_motion
+        state: "off"
+    actions:
+      - action: light.turn_off
+        target:
+          entity_id: light.lab_light

@@ -1,0 +1,16 @@
+{
+  "id": "07-pam-onboarding",
+  "title": "PAM platform and session onboarding playbook",
+  "category": "Privileged access management",
+  "archiveStatus": "Design and operational runbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "Account management and session connection have separate acceptance criteria.",
+    "Credential material is never included in a connector troubleshooting screenshot.",
+    "A rollback owner, pre-change export and test account are identified before a platform change."
+  ]
+}

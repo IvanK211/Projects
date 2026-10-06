@@ -1,0 +1,20 @@
+{
+  "id": "30-rfid-lab",
+  "title": "MFRC522 checker, reader and guarded lab writer",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Three Arduino sketches; hardware build unverified",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/30-rfid-lab/Checker/Checker.ino",
+    "projects/30-rfid-lab/Reader/Reader.ino",
+    "projects/30-rfid-lab/Writer/Writer.ino"
+  ],
+  "requiredValidation": [
+    "No write is possible with the shipped compile-time flag.",
+    "Unsupported card types and failed authentication cause no fallback key attempts.",
+    "A successful write requires a matching read-back result."
+  ]
+}

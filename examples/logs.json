@@ -1,0 +1,17 @@
+[
+  {
+    "level": "info",
+    "eventType": "start",
+    "message": "Synthetic event"
+  },
+  {
+    "level": "warning",
+    "eventType": "retry",
+    "message": "Synthetic event"
+  },
+  {
+    "level": "warning",
+    "eventType": "retry",
+    "message": "Synthetic event"
+  }
+]

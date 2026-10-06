@@ -1,0 +1,7 @@
+// Exact case-insensitive matching avoids substring collisions.
+let RequestedHosts = dynamic(["lab-a.example.invalid", "lab-b.example.invalid"]);
+DeviceInfo
+| where Timestamp > ago(7d)
+| where DeviceName in~ (RequestedHosts)
+| summarize arg_max(Timestamp, *) by DeviceId
+| project Timestamp, DeviceId, DeviceName, OSPlatform, SensorHealthState

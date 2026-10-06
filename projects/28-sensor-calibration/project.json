@@ -1,0 +1,20 @@
+{
+  "id": "28-sensor-calibration",
+  "title": "Sensor calibration and drift logging",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Offline implementation + measurement schema",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit sensors examples/sensors.json local-output/sensor-summary.json",
+  "sourceFiles": [
+    "labkit/telemetry.py",
+    "examples/sensors.json",
+    "projects/28-sensor-calibration/measurement-template.json"
+  ],
+  "requiredValidation": [
+    "Different units never share one statistical group.",
+    "Non-finite readings and missing timestamps are rejected.",
+    "Zero elapsed time gives unknown drift rather than a divide-by-zero or invented trend."
+  ]
+}

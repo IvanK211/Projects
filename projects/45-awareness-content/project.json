@@ -1,0 +1,18 @@
+{
+  "id": "45-awareness-content",
+  "title": "Authorized awareness-simulation content kit",
+  "category": "Security reporting",
+  "archiveStatus": "Static training page + campaign worksheet",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/45-awareness-content/simulation-landing.html"
+  ],
+  "requiredValidation": [
+    "The shipped page cannot submit credentials.",
+    "No external request is needed to render it.",
+    "Campaign results remain private unless separately approved and de-identified."
+  ]
+}

@@ -1,0 +1,15 @@
+# No privileged mode, Docker socket or serial device is granted by default.
+services:
+  firmware:
+    image: ${FIRMWARE_IMAGE:?Set an approved ESPHome image reference}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${FIRMWARE_HOST_PORT:?Choose an unused local port}:6052"
+    volumes:
+      - firmware-config:/config
+    security_opt: [no-new-privileges:true]
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "2"}
+volumes:
+  firmware-config: {}

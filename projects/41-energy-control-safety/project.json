@@ -1,0 +1,16 @@
+{
+  "id": "41-energy-control-safety",
+  "title": "Household energy-control safety architecture",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Concept only; no mains wiring or construction files",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "Loss of control connectivity has a documented safe outcome.",
+    "Protective functions remain independent of remote software.",
+    "No actual electrical design or deployment information is published."
+  ]
+}

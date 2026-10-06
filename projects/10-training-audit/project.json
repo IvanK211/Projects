@@ -1,0 +1,19 @@
+{
+  "id": "10-training-audit",
+  "title": "Security-awareness training audit",
+  "category": "Security reporting",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit training examples/training.json local-output/training-audit.json",
+  "sourceFiles": [
+    "labkit/awareness.py",
+    "examples/training.json"
+  ],
+  "requiredValidation": [
+    "Missed equals incomplete plus not assigned.",
+    "A zero-obligation group has an unknown completion rate, not a fabricated perfect score.",
+    "Inactive users are excluded only by the explicit active flag."
+  ]
+}

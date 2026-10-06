@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "observedAt": "2001-01-01T12:00:00Z",
+  "subsystems": [
+    {
+      "name": "Manager",
+      "state": "healthy",
+      "detail": "Synthetic service response"
+    },
+    {
+      "name": "Indexer",
+      "state": "degraded",
+      "detail": "Synthetic delay condition"
+    },
+    {
+      "name": "Agent transport",
+      "state": "unknown",
+      "detail": "No sample available"
+    }
+  ],
+  "samples": [
+    {
+      "time": "2001-01-01T11:59:00Z",
+      "source": "synthetic-index-a",
+      "count": 120
+    },
+    {
+      "time": "2001-01-01T12:00:00Z",
+      "source": "synthetic-index-a",
+      "count": 240
+    }
+  ]
+}

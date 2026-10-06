@@ -1,0 +1,18 @@
+{
+  "id": "32-low-voltage-output",
+  "title": "Low-energy output-control pattern",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Arduino indicator sketch; hardware unverified",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/32-low-voltage-output/LedControl/LedControl.ino"
+  ],
+  "requiredValidation": [
+    "Startup output is zero.",
+    "The loop remains responsive during brightness changes.",
+    "The source does not contain a hazardous actuator integration."
+  ]
+}

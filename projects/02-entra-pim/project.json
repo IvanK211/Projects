@@ -1,0 +1,20 @@
+{
+  "id": "02-entra-pim",
+  "title": "Directory-role PIM request audit",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "Offline implementation + unverified live collector",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit pim examples/pim.json local-output/pim.json --since 2001-01-01T00:00:00Z",
+  "sourceFiles": [
+    "labkit/awareness.py",
+    "projects/02-entra-pim/Export-PimRequests.ps1",
+    "examples/pim.json"
+  ],
+  "requiredValidation": [
+    "Dates include offsets and are compared in UTC.",
+    "Unknown principals keep their IDs and do not silently disappear.",
+    "Azure resource roles and PIM for Groups are explicitly outside the collector scope."
+  ]
+}

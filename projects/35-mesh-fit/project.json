@@ -1,0 +1,18 @@
+{
+  "id": "35-mesh-fit",
+  "title": "Uniform bounding-box fit calculator",
+  "category": "Mechanical design and fabrication",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit fit --source 60 40 30 --target 90 70 50 --clearance 0.5 local-output/fit.json",
+  "sourceFiles": [
+    "labkit/engineering.py"
+  ],
+  "requiredValidation": [
+    "Zero/negative source dimensions are rejected.",
+    "Clearance that consumes the target is rejected.",
+    "Every scaled dimension fits within the reduced target bounds."
+  ]
+}

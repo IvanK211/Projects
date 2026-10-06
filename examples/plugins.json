@@ -1,0 +1,18 @@
+[
+  {
+    "pluginId": "lab-plugin-a",
+    "name": "Example Debian local check",
+    "family": "Local Checks",
+    "description": "Synthetic metadata"
+  },
+  {
+    "pluginId": "lab-plugin-b",
+    "name": "Example VMware ESXi check",
+    "family": "Virtualization"
+  },
+  {
+    "pluginId": "lab-plugin-c",
+    "name": "Generic service discovery",
+    "family": "Discovery"
+  }
+]

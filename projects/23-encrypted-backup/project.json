@@ -1,0 +1,19 @@
+{
+  "id": "23-encrypted-backup",
+  "title": "Encrypted snapshot and restore verification",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Bash syntax-checked reference; encryption round-trip pending",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/23-encrypted-backup/backup.sh",
+    "projects/23-encrypted-backup/verify-backup.sh"
+  ],
+  "requiredValidation": [
+    "An encryption or tar failure returns a failed command.",
+    "A destination inside the source is rejected.",
+    "A successful archive listing is not reported as a completed application recovery."
+  ]
+}

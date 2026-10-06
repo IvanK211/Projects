@@ -1,0 +1,15 @@
+# Bridge networking is intentional. Discovery may require separately reviewed networking.
+services:
+  automation:
+    image: ${AUTOMATION_IMAGE:?Set an approved Home Assistant image reference}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${AUTOMATION_HOST_PORT:?Choose an unused local port}:8123"
+    volumes:
+      - automation-config:/config
+    security_opt: [no-new-privileges:true]
+    logging:
+      driver: json-file
+      options: {max-size: "5m", max-file: "2"}
+volumes:
+  automation-config: {}

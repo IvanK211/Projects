@@ -1,0 +1,18 @@
+{
+  "id": "37-offline-container-distribution",
+  "title": "Offline container-image distribution",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Bash syntax-checked reference + transfer playbook",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/37-offline-container-distribution/save-image.sh"
+  ],
+  "requiredValidation": [
+    "The output archive is not silently overwritten.",
+    "No environment file is bundled by the export helper.",
+    "The recipient verifies provenance as well as integrity."
+  ]
+}

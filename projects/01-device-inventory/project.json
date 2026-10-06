@@ -1,0 +1,20 @@
+{
+  "id": "01-device-inventory",
+  "title": "Managed-device inventory and snapshot reconciliation",
+  "category": "Identity and endpoint security",
+  "archiveStatus": "Offline implementation + unverified live collector",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit inventory examples/inventory.json local-output/inventory-report.json",
+  "sourceFiles": [
+    "labkit/inventory.py",
+    "projects/01-device-inventory/Export-ManagedDevices.ps1",
+    "examples/inventory.json"
+  ],
+  "requiredValidation": [
+    "A short hostname does not match an unrelated hostname containing it.",
+    "A duplicate record is visible, even when a single newest record is selected.",
+    "A renamed stable ID appears as changed, and absent data does not establish an employee departure."
+  ]
+}

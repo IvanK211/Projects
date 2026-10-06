@@ -1,0 +1,19 @@
+{
+  "id": "11-phishing-analytics",
+  "title": "Phishing-simulation campaign analytics",
+  "category": "Security reporting",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit phishing examples/phishing.json local-output/phishing-summary.json",
+  "sourceFiles": [
+    "labkit/awareness.py",
+    "examples/phishing.json"
+  ],
+  "requiredValidation": [
+    "Counts cannot be negative, fractional or greater than delivered recipients.",
+    "Zero delivery produces an unknown rate.",
+    "The synthetic example yields different weighted and campaign-average rates."
+  ]
+}

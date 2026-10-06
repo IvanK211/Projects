@@ -1,0 +1,18 @@
+{
+  "id": "21-linux-baseline",
+  "title": "Linux host baseline and diagnostics",
+  "category": "Infrastructure and operations",
+  "archiveStatus": "Read-only shell reference",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "bash projects/21-linux-baseline/audit-host.sh",
+  "sourceFiles": [
+    "projects/21-linux-baseline/audit-host.sh"
+  ],
+  "requiredValidation": [
+    "The supplied script performs no policy writes or service restarts.",
+    "Filesystem size is not confused with free space or partition capacity.",
+    "A hardening proposal includes a tested administrative recovery route."
+  ]
+}

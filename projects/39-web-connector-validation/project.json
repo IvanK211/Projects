@@ -1,0 +1,16 @@
+{
+  "id": "39-web-connector-validation",
+  "title": "Browser connector and authentication validation",
+  "category": "Privileged access management",
+  "archiveStatus": "Design and troubleshooting matrix",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "A session-only integration is not claimed to rotate passwords.",
+    "The connector fails clearly when UI or authentication behavior changes.",
+    "Credentials do not appear in command lines, screenshots, logs or published selectors."
+  ]
+}

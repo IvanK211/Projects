@@ -1,0 +1,19 @@
+{
+  "id": "12-security-kpi-reporting",
+  "title": "Security KPI and board-report pipeline",
+  "category": "Security reporting",
+  "archiveStatus": "Offline implementation + presentation design",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit kpis examples/kpis.json local-output/kpi-summary.json",
+  "sourceFiles": [
+    "labkit/reporting.py",
+    "examples/kpis.json"
+  ],
+  "requiredValidation": [
+    "A missing metric is distinct from a numeric zero.",
+    "Untrusted strings are escaped in generated HTML.",
+    "Report content has no remote dependencies or corporate branding."
+  ]
+}

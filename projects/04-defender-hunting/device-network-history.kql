@@ -1,0 +1,6 @@
+// History is intentionally preserved; do not replace it with one current-IP claim.
+DeviceNetworkInfo
+| where Timestamp > ago(1d)
+| mv-expand Address = todynamic(IPAddresses)
+| project Timestamp, DeviceId, DeviceName, IPAddress=tostring(Address.IPAddress), NetworkAdapterName
+| order by Timestamp desc

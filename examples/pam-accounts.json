@@ -1,0 +1,28 @@
+[
+  {
+    "id": "account-a",
+    "address": "app-a.example.invalid",
+    "safeName": "LAB-SAFE",
+    "platformId": "LAB-WEB",
+    "platformAccountProperties": {
+      "Port": "8443",
+      "Location": "Lab"
+    }
+  },
+  {
+    "id": "account-b",
+    "address": "app-b.other.invalid",
+    "safeName": "LAB-SAFE",
+    "platformId": "LAB-WEB",
+    "platformAccountProperties": {
+      "Port": "8443"
+    }
+  },
+  {
+    "id": "account-c",
+    "address": "notexample.invalid",
+    "safeName": "LAB-SAFE",
+    "platformId": "LAB-WEB",
+    "platformAccountProperties": {}
+  }
+]

@@ -1,0 +1,2 @@
+SERVICE_URL=https://api.source.invalid/v1/status
+OTHER_URL=https://unrelated.example.invalid/status

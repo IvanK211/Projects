@@ -1,0 +1,20 @@
+{
+  "id": "13-siem-health-dashboard",
+  "title": "SIEM health snapshot dashboard",
+  "category": "Security reporting",
+  "archiveStatus": "Node snapshot viewer + live integration design",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "node projects/13-siem-health-dashboard/server.mjs",
+  "sourceFiles": [
+    "projects/13-siem-health-dashboard/server.mjs",
+    "labkit/telemetry.py",
+    "examples/siem-health.json"
+  ],
+  "requiredValidation": [
+    "A running server does not falsely imply a healthy SIEM.",
+    "A missing subsystem is unknown rather than silently green.",
+    "The browser renders snapshot content as text, not executable HTML."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "edition": "0.1.0",
+  "validationDate": "2026-10-06",
+  "scope": "Synthetic offline reference, not production or hardware validation",
+  "checks": {
+    "unitTests": {
+      "count": 89,
+      "result": "passed"
+    },
+    "offlineCliWorkflows": {
+      "count": 17,
+      "result": "passed"
+    },
+    "nodeHttpChecks": {
+      "count": 11,
+      "result": "passed",
+      "listener": "loopback only; ephemeral"
+    },
+    "bashSyntax": {
+      "files": 5,
+      "result": "passed; not executed operationally"
+    },
+    "yamlSyntax": {
+      "files": 7,
+      "result": "parsed with an explicit secret-tag constructor; runtime schema not validated"
+    },
+    "cad": [
+      {
+        "file": "projects/33-parametric-cad/meshes/enclosure-base.stl",
+        "watertight": true,
+        "positiveVolume": true,
+        "faces": 28,
+        "boundsSize": [
+          80.0,
+          50.0,
+          24.0
+        ]
+      },
+      {
+        "file": "projects/33-parametric-cad/meshes/enclosure-lid.stl",
+        "watertight": true,
+        "positiveVolume": true,
+        "faces": 44,
+        "boundsSize": [
+          80.0,
+          50.0,
+          5.0
+        ]
+      },
+      {
+        "file": "projects/33-parametric-cad/meshes/fit-coupon.stl",
+        "watertight": true,
+        "positiveVolume": true,
+        "faces": 1020,
+        "boundsSize": [
+          62.0,
+          25.5,
+          10.0
+        ]
+      }
+    ]
+  },
+  "notValidated": [
+    "PowerShell execution and parameter binding",
+    "Live Microsoft Graph, Defender, PAM, Tenable, KnowBe4 or Wazuh integrations",
+    "GitLab pipeline execution",
+    "Docker image pull/build/start and Compose runtime behavior",
+    "Encryption and application restore round-trip",
+    "Home Assistant and ESPHome application schemas",
+    "Arduino firmware compile/flash or real RFID tags",
+    "Physical electronic or printed-part tests"
+  ],
+  "privacy": "Generic scanner and private known-identifier review are release checks, not a mathematical guarantee of anonymity."
+}

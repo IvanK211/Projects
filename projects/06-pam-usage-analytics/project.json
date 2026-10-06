@@ -1,0 +1,19 @@
+{
+  "id": "06-pam-usage-analytics",
+  "title": "PAM session-usage analytics",
+  "category": "Privileged access management",
+  "archiveStatus": "Offline implementation + collection specification",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit sessions examples/pam-sessions.json local-output/pam-usage.json",
+  "sourceFiles": [
+    "labkit/pam.py",
+    "examples/pam-sessions.json"
+  ],
+  "requiredValidation": [
+    "The target account cannot accidentally become the human-usage grouping key.",
+    "Open recordings do not contribute a fabricated duration.",
+    "Retention limitations remain visible in the report narrative."
+  ]
+}

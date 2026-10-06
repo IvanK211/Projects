@@ -1,0 +1,8 @@
+// Read-only. DeviceInfo observations are not a live asset inventory.
+// Set a reporting window appropriate to available retention before using this query.
+DeviceInfo
+| where Timestamp > ago(7d)
+| summarize arg_max(Timestamp, *) by DeviceId
+| project ObservedAt=Timestamp, DeviceId, DeviceName, OSPlatform, OSVersion,
+          OnboardingStatus, SensorHealthState
+| order by ObservedAt desc

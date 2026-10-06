@@ -1,0 +1,19 @@
+{
+  "id": "38-network-correlation",
+  "title": "Historical IP-to-asset correlation",
+  "category": "Detection engineering",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit correlate examples/ip-observations.json local-output/ip-correlation.json --ip 192.0.2.10 --as-of 2001-01-02T12:00:00Z --max-age-hours 12",
+  "sourceFiles": [
+    "labkit/telemetry.py",
+    "examples/ip-observations.json"
+  ],
+  "requiredValidation": [
+    "An address shared at different times keeps both observations.",
+    "Stale and future-dated records are separately marked.",
+    "No active network access occurs during analysis."
+  ]
+}

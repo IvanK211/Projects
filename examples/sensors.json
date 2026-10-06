@@ -1,0 +1,20 @@
+[
+  {
+    "sensor": "probe-a",
+    "time": "2001-01-01T00:00:00Z",
+    "unit": "pH",
+    "value": 6.1
+  },
+  {
+    "sensor": "probe-a",
+    "time": "2001-01-01T00:30:00Z",
+    "unit": "pH",
+    "value": 6.2
+  },
+  {
+    "sensor": "probe-a",
+    "time": "2001-01-01T01:00:00Z",
+    "unit": "pH",
+    "value": 6.3
+  }
+]

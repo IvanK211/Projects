@@ -1,0 +1,23 @@
+[
+  {
+    "campaignId": "simulation-a",
+    "division": "Group Alpha",
+    "delivered": 40,
+    "failed": 4,
+    "reported": 15
+  },
+  {
+    "campaignId": "simulation-b",
+    "division": "Group Alpha",
+    "delivered": 80,
+    "failed": 2,
+    "reported": 30
+  },
+  {
+    "campaignId": "simulation-a",
+    "division": "Group Beta",
+    "delivered": 0,
+    "failed": 0,
+    "reported": 0
+  }
+]

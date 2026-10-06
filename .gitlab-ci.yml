@@ -1,0 +1,22 @@
+# Generic CI template. Image tags are examples, not pinned supply-chain approvals.
+# Review/pin an approved digest in your GitLab instance before production use.
+stages: [validate]
+default:
+  image: python:3.13-slim
+  before_script:
+    - export PYTHONDONTWRITEBYTECODE=1
+validate-offline:
+  stage: validate
+  script:
+    - python tools/privacy_scan.py
+    - python tools/check_repository.py
+    - python -m unittest discover -s tests -v
+    - python tools/run_demo.py
+    - python tools/check_shell.py
+node-syntax:
+  image: node:22-slim
+  stage: validate
+  script:
+    - node --check projects/13-siem-health-dashboard/server.mjs
+# Deliberately no credentials, deployment steps, customer data, live tenant
+# access or report artifacts. Runtime reports must not become CI artifacts.

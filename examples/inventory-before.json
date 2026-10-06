@@ -1,0 +1,10 @@
+[
+  {
+    "id": "device-a",
+    "deviceName": "LAB-A"
+  },
+  {
+    "id": "device-b",
+    "deviceName": "LAB-B"
+  }
+]

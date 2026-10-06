@@ -1,0 +1,15 @@
+[
+  {
+    "id": "session-a",
+    "initiatingUser": "person-a",
+    "targetUser": "privileged-lab-account",
+    "start": "2001-01-01T10:00:00Z",
+    "end": "2001-01-01T10:12:00Z"
+  },
+  {
+    "id": "session-b",
+    "initiatingUser": "person-a",
+    "start": "2001-01-01T11:00:00Z",
+    "end": null
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "id": "29-hydroponic-engineering",
+  "title": "Hydroponic tower mechanical and hydraulic design",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Calculation utility + design guide",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit flow --collected-liters 1 --seconds 24 --reservoir-liters 12 local-output/flow.json",
+  "sourceFiles": [
+    "labkit/engineering.py"
+  ],
+  "requiredValidation": [
+    "Flow is measured at the intended head and plumbing configuration.",
+    "The return path handles the supplied flow without relying on optimistic assumptions.",
+    "A turnover estimate is not described as an oxygenation result."
+  ]
+}

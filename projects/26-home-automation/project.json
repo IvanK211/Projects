@@ -1,0 +1,18 @@
+{
+  "id": "26-home-automation",
+  "title": "Presence, night-mode and lighting automations",
+  "category": "Home automation and embedded systems",
+  "archiveStatus": "Home Assistant YAML template; runtime unverified",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/26-home-automation/lighting-package.yaml"
+  ],
+  "requiredValidation": [
+    "Night mode changes the selected brightness in the reference logic.",
+    "A stale or unavailable sensor is not assumed to mean a safe empty room.",
+    "Manual override and restart semantics are documented rather than implicit."
+  ]
+}

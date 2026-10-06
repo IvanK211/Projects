@@ -1,0 +1,31 @@
+{
+  "requested": [
+    "LAB-A",
+    "lab-b",
+    "lab-c",
+    " LAB-A "
+  ],
+  "devices": [
+    {
+      "id": "device-a-old",
+      "deviceName": "LAB-A",
+      "operatingSystem": "ExampleOS",
+      "lastSyncDateTime": "2001-01-01T00:00:00Z",
+      "userPrincipalName": "user-a@example.invalid"
+    },
+    {
+      "id": "device-a-new",
+      "deviceName": "lab-a",
+      "operatingSystem": "ExampleOS",
+      "lastSyncDateTime": "2001-01-03T00:00:00Z",
+      "userPrincipalName": "user-a@example.invalid"
+    },
+    {
+      "id": "device-b",
+      "deviceName": "LAB-B",
+      "operatingSystem": "ExampleOS",
+      "lastSyncDateTime": null,
+      "userPrincipalName": null
+    }
+  ]
+}

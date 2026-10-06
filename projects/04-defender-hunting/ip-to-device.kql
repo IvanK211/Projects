@@ -1,0 +1,9 @@
+// Synthetic documentation address; replace ONLY in a private working copy.
+let TargetIP = "192.0.2.10";
+DeviceNetworkInfo
+| where Timestamp > ago(7d)
+| mv-expand Address = todynamic(IPAddresses)
+| extend ObservedIP = tostring(Address.IPAddress)
+| where ObservedIP == TargetIP
+| summarize FirstSeen=min(Timestamp), LastSeen=max(Timestamp) by DeviceId, DeviceName, ObservedIP
+| order by LastSeen desc

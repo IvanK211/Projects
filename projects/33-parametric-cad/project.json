@@ -1,0 +1,19 @@
+{
+  "id": "33-parametric-cad",
+  "title": "Parametric enclosure and fit-coupon sources",
+  "category": "Mechanical design and fabrication",
+  "archiveStatus": "OpenSCAD source + rendered reference meshes",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [
+    "projects/33-parametric-cad/enclosure.scad",
+    "projects/33-parametric-cad/fit-coupon.scad"
+  ],
+  "requiredValidation": [
+    "The mesh renderer reports a valid closed solid for each enclosure part.",
+    "The lid and base are separate printable parts.",
+    "No real board mounting pattern or physical-security mechanism is encoded."
+  ]
+}

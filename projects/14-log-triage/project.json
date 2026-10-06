@@ -1,0 +1,19 @@
+{
+  "id": "14-log-triage",
+  "title": "Structured log triage and summary",
+  "category": "Security reporting",
+  "archiveStatus": "Offline implementation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": "python -m labkit logs examples/logs.json local-output/log-summary.json",
+  "sourceFiles": [
+    "labkit/telemetry.py",
+    "examples/logs.json"
+  ],
+  "requiredValidation": [
+    "Raw messages do not appear in the aggregate output.",
+    "Unknown labels remain visible.",
+    "No summary claims a root cause from frequency alone."
+  ]
+}

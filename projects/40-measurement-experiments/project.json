@@ -1,0 +1,16 @@
+{
+  "id": "40-measurement-experiments",
+  "title": "Controlled measurement and solution-observation protocol",
+  "category": "Engineering methods",
+  "archiveStatus": "Experiment templates; no chemical-dosing automation",
+  "edition": "generic-reference",
+  "privateDeploymentClaim": false,
+  "bundledExampleData": "synthetic-only",
+  "entryPoint": null,
+  "sourceFiles": [],
+  "requiredValidation": [
+    "The log can distinguish a system observation from a separate sample observation.",
+    "The experimental design has a baseline and a stopping criterion.",
+    "No apparent correlation is presented as a confirmed chemical mechanism."
+  ]
+}

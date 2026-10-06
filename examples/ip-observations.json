@@ -1,0 +1,16 @@
+[
+  {
+    "deviceId": "device-a",
+    "deviceName": "LAB-A",
+    "ip": "192.0.2.10",
+    "time": "2001-01-01T10:00:00Z",
+    "source": "synthetic-endpoint"
+  },
+  {
+    "deviceId": "device-b",
+    "deviceName": "LAB-B",
+    "ip": "192.0.2.10",
+    "time": "2001-01-02T10:00:00Z",
+    "source": "synthetic-network"
+  }
+]

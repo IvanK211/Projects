@@ -1,0 +1,31 @@
+[
+  {
+    "id": "request-a",
+    "principalId": "person-a",
+    "roleDefinitionId": "role-a",
+    "action": "selfActivate",
+    "status": "Provisioned",
+    "createdDateTime": "2001-01-02T09:00:00Z",
+    "justification": "Synthetic maintenance exercise",
+    "scheduleInfo": {
+      "startDateTime": "2001-01-02T09:01:00Z",
+      "expiration": {
+        "type": "afterDuration",
+        "duration": "PT1H"
+      }
+    }
+  },
+  {
+    "id": "request-b",
+    "principalId": "person-b",
+    "roleDefinitionId": "role-a",
+    "action": "selfActivate",
+    "status": "Denied",
+    "createdDateTime": "2001-01-03T09:00:00Z"
+  },
+  {
+    "id": "request-c",
+    "action": "adminAssign",
+    "createdDateTime": "2001-01-03T09:00:00Z"
+  }
+]
