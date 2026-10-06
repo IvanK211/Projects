@@ -1,0 +1,317 @@
+[
+  {
+    "id": "01-device-inventory",
+    "title": "Managed-device inventory and snapshot reconciliation",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "Offline implementation + unverified live collector",
+    "path": "projects/01-device-inventory"
+  },
+  {
+    "id": "02-entra-pim",
+    "title": "Directory-role PIM request audit",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "Offline implementation + unverified live collector",
+    "path": "projects/02-entra-pim"
+  },
+  {
+    "id": "03-directory-memberships",
+    "title": "Directory group-membership audit",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "Unverified live collector + analysis guide",
+    "path": "projects/03-directory-memberships"
+  },
+  {
+    "id": "04-defender-hunting",
+    "title": "Endpoint identity and network hunting queries",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "KQL templates; not executed against a tenant",
+    "path": "projects/04-defender-hunting"
+  },
+  {
+    "id": "05-pam-port-management",
+    "title": "PAM account-property change planning",
+    "category": "Privileged access management",
+    "archiveStatus": "Offline planner + unverified, guarded live executor",
+    "path": "projects/05-pam-port-management"
+  },
+  {
+    "id": "06-pam-usage-analytics",
+    "title": "PAM session-usage analytics",
+    "category": "Privileged access management",
+    "archiveStatus": "Offline implementation + collection specification",
+    "path": "projects/06-pam-usage-analytics"
+  },
+  {
+    "id": "07-pam-onboarding",
+    "title": "PAM platform and session onboarding playbook",
+    "category": "Privileged access management",
+    "archiveStatus": "Design and operational runbook",
+    "path": "projects/07-pam-onboarding"
+  },
+  {
+    "id": "08-vulnerability-risk",
+    "title": "Vulnerability metadata and risk-register review",
+    "category": "Vulnerability management",
+    "archiveStatus": "Offline implementation + API design note",
+    "path": "projects/08-vulnerability-risk"
+  },
+  {
+    "id": "09-vulnerability-scan-operations",
+    "title": "Credentialed vulnerability-scan operations",
+    "category": "Vulnerability management",
+    "archiveStatus": "Design and troubleshooting runbook",
+    "path": "projects/09-vulnerability-scan-operations"
+  },
+  {
+    "id": "10-training-audit",
+    "title": "Security-awareness training audit",
+    "category": "Security reporting",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/10-training-audit"
+  },
+  {
+    "id": "11-phishing-analytics",
+    "title": "Phishing-simulation campaign analytics",
+    "category": "Security reporting",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/11-phishing-analytics"
+  },
+  {
+    "id": "12-security-kpi-reporting",
+    "title": "Security KPI and board-report pipeline",
+    "category": "Security reporting",
+    "archiveStatus": "Offline implementation + presentation design",
+    "path": "projects/12-security-kpi-reporting"
+  },
+  {
+    "id": "13-siem-health-dashboard",
+    "title": "SIEM health snapshot dashboard",
+    "category": "Security reporting",
+    "archiveStatus": "Node snapshot viewer + live integration design",
+    "path": "projects/13-siem-health-dashboard"
+  },
+  {
+    "id": "14-log-triage",
+    "title": "Structured log triage and summary",
+    "category": "Security reporting",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/14-log-triage"
+  },
+  {
+    "id": "15-deception-lab",
+    "title": "Defensive deception and canary lab",
+    "category": "Detection engineering",
+    "archiveStatus": "Local demonstration + design playbook",
+    "path": "projects/15-deception-lab"
+  },
+  {
+    "id": "16-endpoint-data-protection",
+    "title": "Endpoint DLP, device control and cloud-app governance",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "Design and validation playbook",
+    "path": "projects/16-endpoint-data-protection"
+  },
+  {
+    "id": "17-conditional-access",
+    "title": "Conditional-access and MFA rollout kit",
+    "category": "Identity and endpoint security",
+    "archiveStatus": "Design and communication templates",
+    "path": "projects/17-conditional-access"
+  },
+  {
+    "id": "18-compliance-evidence",
+    "title": "Security-control evidence and operational assurance",
+    "category": "Governance and documentation",
+    "archiveStatus": "Reusable templates; not a compliance opinion",
+    "path": "projects/18-compliance-evidence"
+  },
+  {
+    "id": "19-agent-endpoint-audit",
+    "title": "Region-aware agent and API endpoint review",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Offline transformation tool + connectivity runbook",
+    "path": "projects/19-agent-endpoint-audit"
+  },
+  {
+    "id": "20-service-watchdog",
+    "title": "Bounded Linux service watchdog",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Bash syntax-checked reference; service recovery unverified",
+    "path": "projects/20-service-watchdog"
+  },
+  {
+    "id": "21-linux-baseline",
+    "title": "Linux host baseline and diagnostics",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Read-only shell reference",
+    "path": "projects/21-linux-baseline"
+  },
+  {
+    "id": "22-container-blueprints",
+    "title": "Independent container-service blueprints",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Deployment templates; not Docker-runtime validated",
+    "path": "projects/22-container-blueprints"
+  },
+  {
+    "id": "23-encrypted-backup",
+    "title": "Encrypted snapshot and restore verification",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Bash syntax-checked reference; encryption round-trip pending",
+    "path": "projects/23-encrypted-backup"
+  },
+  {
+    "id": "24-private-remote-access",
+    "title": "Private remote-administration design",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Design and recovery runbook",
+    "path": "projects/24-private-remote-access"
+  },
+  {
+    "id": "25-mqtt-zigbee",
+    "title": "MQTT authorization and Zigbee integration lab",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Configuration example + design guide",
+    "path": "projects/25-mqtt-zigbee"
+  },
+  {
+    "id": "26-home-automation",
+    "title": "Presence, night-mode and lighting automations",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Home Assistant YAML template; runtime unverified",
+    "path": "projects/26-home-automation"
+  },
+  {
+    "id": "27-water-controller",
+    "title": "Fail-safe low-voltage water-controller bench",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "ESPHome firmware template; hardware unverified",
+    "path": "projects/27-water-controller"
+  },
+  {
+    "id": "28-sensor-calibration",
+    "title": "Sensor calibration and drift logging",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Offline implementation + measurement schema",
+    "path": "projects/28-sensor-calibration"
+  },
+  {
+    "id": "29-hydroponic-engineering",
+    "title": "Hydroponic tower mechanical and hydraulic design",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Calculation utility + design guide",
+    "path": "projects/29-hydroponic-engineering"
+  },
+  {
+    "id": "30-rfid-lab",
+    "title": "MFRC522 checker, reader and guarded lab writer",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Three Arduino sketches; hardware build unverified",
+    "path": "projects/30-rfid-lab"
+  },
+  {
+    "id": "31-embedded-timer",
+    "title": "Nonblocking two-team event timer",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Arduino reference sketch; hardware build unverified",
+    "path": "projects/31-embedded-timer"
+  },
+  {
+    "id": "32-low-voltage-output",
+    "title": "Low-energy output-control pattern",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Arduino indicator sketch; hardware unverified",
+    "path": "projects/32-low-voltage-output"
+  },
+  {
+    "id": "33-parametric-cad",
+    "title": "Parametric enclosure and fit-coupon sources",
+    "category": "Mechanical design and fabrication",
+    "archiveStatus": "OpenSCAD source + rendered reference meshes",
+    "path": "projects/33-parametric-cad"
+  },
+  {
+    "id": "34-print-quality",
+    "title": "FDM print quality, maintenance and material selection",
+    "category": "Mechanical design and fabrication",
+    "archiveStatus": "Design and maintenance worksheets",
+    "path": "projects/34-print-quality"
+  },
+  {
+    "id": "35-mesh-fit",
+    "title": "Uniform bounding-box fit calculator",
+    "category": "Mechanical design and fabrication",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/35-mesh-fit"
+  },
+  {
+    "id": "36-developer-productivity",
+    "title": "Portable project notes and workflow scaffolding",
+    "category": "Developer tooling",
+    "archiveStatus": "Markdown templates + repository-index utility",
+    "path": "projects/36-developer-productivity"
+  },
+  {
+    "id": "37-offline-container-distribution",
+    "title": "Offline container-image distribution",
+    "category": "Infrastructure and operations",
+    "archiveStatus": "Bash syntax-checked reference + transfer playbook",
+    "path": "projects/37-offline-container-distribution"
+  },
+  {
+    "id": "38-network-correlation",
+    "title": "Historical IP-to-asset correlation",
+    "category": "Detection engineering",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/38-network-correlation"
+  },
+  {
+    "id": "39-web-connector-validation",
+    "title": "Browser connector and authentication validation",
+    "category": "Privileged access management",
+    "archiveStatus": "Design and troubleshooting matrix",
+    "path": "projects/39-web-connector-validation"
+  },
+  {
+    "id": "40-measurement-experiments",
+    "title": "Controlled measurement and solution-observation protocol",
+    "category": "Engineering methods",
+    "archiveStatus": "Experiment templates; no chemical-dosing automation",
+    "path": "projects/40-measurement-experiments"
+  },
+  {
+    "id": "41-energy-control-safety",
+    "title": "Household energy-control safety architecture",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Concept only; no mains wiring or construction files",
+    "path": "projects/41-energy-control-safety"
+  },
+  {
+    "id": "42-smart-mirror-concept",
+    "title": "Local information-display and smart-mirror concept",
+    "category": "Home automation and embedded systems",
+    "archiveStatus": "Concept architecture only",
+    "path": "projects/42-smart-mirror-concept"
+  },
+  {
+    "id": "43-local-development",
+    "title": "Safe local development and demonstration workflow",
+    "category": "Developer tooling",
+    "archiveStatus": "Operational checklist",
+    "path": "projects/43-local-development"
+  },
+  {
+    "id": "44-power-budget",
+    "title": "Low-voltage runtime and energy-budget calculator",
+    "category": "Engineering methods",
+    "archiveStatus": "Offline implementation",
+    "path": "projects/44-power-budget"
+  },
+  {
+    "id": "45-awareness-content",
+    "title": "Authorized awareness-simulation content kit",
+    "category": "Security reporting",
+    "archiveStatus": "Static training page + campaign worksheet",
+    "path": "projects/45-awareness-content"
+  }
+]
